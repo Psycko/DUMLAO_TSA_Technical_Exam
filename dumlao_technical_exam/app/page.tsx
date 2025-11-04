@@ -157,6 +157,7 @@ export default function MainPage() {
                     }}
                   />
                 </th>
+                <th className="px-2 py-4 w-20">Task ID</th>
                 <th className="px-2 py-4 w-60">Task Name</th>
                 <th className="px-2 py-4 min-w-[290px] max-w-[290px] table-fixed">Description</th>
                 <th className="px-2 py-4 w-32">Date Added</th>
@@ -180,6 +181,9 @@ export default function MainPage() {
                           }
                         }}
                       />
+                    </td>
+                    <td className="p-2 w-20" onClick={() => handleRowClick(task.task_id)}>
+                      <div className="truncate">{task.task_id}</div>
                     </td>
                     <td className="p-2 w-48" onClick={() => handleRowClick(task.task_id)}>
                       <div className="truncate">{task.task_name}</div>
