@@ -24,12 +24,12 @@ A technical examination project built with Next.js, React, and TypeScript. The a
 3. Install dependencies:
    1. cd dumlao_technical_exam
    2. npm install
-         # or
+        # or
       yarn install
 
-4. Run script 'npm run build'
+4. Run script **'npm run build'**
 
-5. Open the application in production build 'npm start'
+5. Open the application in production build **'npm start'**
 
 ### Available Scripts
 - `npm run dev` - Starts the development server
