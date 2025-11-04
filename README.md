@@ -3,6 +3,8 @@
 ## Project Overview
 A technical examination project built with Next.js, React, and TypeScript. The application features data visualization using Chart.js and modern UI components styled with TailwindCSS.
 
+The scope of the project is to create a To-do List application capable of adding, updating, and deleting task/s. Visualization was also added for the user to easily assess their progress.
+
 ## Technologies Used
 - [Next.js](https://nextjs.org/) (v16.0.1)
 - [React](https://reactjs.org/) (v19.2.0)
@@ -51,6 +53,7 @@ The application was built on a very simple basis. Due to this, interactions with
   - enhancing tasks statuses to inform users of their pending tasks (e.g. include an "Urgent" status for tasks that are near the deadline)
   - providing different layouts to suit users' preferences
   - due to the scale of the project, the storage used for this application is through saving a JSON file stored in the local storage of the browser. In the future, a database can be used to provide a robust data storage, and use an API in order to create a secure data access. It will also improve the application when implemented through an MVC (Model-View-Controller) architecture.
+  - caching can also be used if a server was implemented to improve data retrieval efficiency.
 
 ## Author
 Christian John Dumlao
