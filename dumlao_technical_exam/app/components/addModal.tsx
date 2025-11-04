@@ -82,6 +82,10 @@ const Modal = ({ isOpen, onClose }: ModalProps) => {
     return isValid;
   };
 
+  const createID = () => {
+
+  }
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
@@ -92,12 +96,14 @@ const Modal = ({ isOpen, onClose }: ModalProps) => {
     const [year, month, day] = deadline.split('-')
     const formatDL = `${month}/${day}/${year}`
 
+    console.log(Date.now())
+
     const jsonTask = localStorage.getItem("myData")
     // json file exist in storage
     if (jsonTask !== null) {
       const data = JSON.parse(jsonTask)
       const newTask = { 
-        task_id: data.length + 1,
+        task_id: "T" + Date.now() + (data.length + 1),
         task_name: title,
         task_desc: description,
         date_added: new Date(),
